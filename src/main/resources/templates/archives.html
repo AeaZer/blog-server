@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{:: title})">
+    <meta charset="UTF-8">
+    <!--首先完成移动端的预览设置问题,设备的宽度初始缩放倍数为1.0倍，这里还可以设置用户禁止缩放等等-->
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+    <title>归档</title>
+    <!--接下来进行semanticUI的css CDN的引用-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <!--引入我们自己写的css-->
+    <link rel="stylesheet" href="../static/css/me.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<!--粒子特效-->
+<canvas id="theCanvas"></canvas>
+<!--导航栏-->
+<nav th:replace="_fragments :: menu(4)" class="ui attached segment m-padded-tb-mini m-shadow-small">
+
+    <!--container的好处很多，其中之一使得设备正常显示-->
+    <div class="ui container">
+        <!--使用一个菜单来放我们所有的导航链接-->
+        <div class="ui  secondary stackable menu">
+            <a class="item">
+                <img class="ui circular image" th:src="${user.avatar}" src="https://picsum.photos/50/50?image=1025">
+                &nbsp;&nbsp;&nbsp;<span th:text="${user.nickname}">Mr_何文昌</span>
+            </a>&nbsp;
+            <a class="item m-item m-mobile-hide"><i class="fas fa-carrot"></i>首页</a>
+            <a class=" item m-item m-mobile-hide"><i class="fas fa-ice-cream"></i>分类</a>
+            <a class=" item m-item m-mobile-hide"><i class="fas fa-candy-cane"></i>标签</a>
+            <a class="active item m-item m-mobile-hide"><i class="fas fa-pizza-slice"></i>归档</a>
+            <a class="item m-item m-mobile-hide"><i class="fas fa-cookie"></i>本站</a>
+            <a class="item m-item m-mobile-hide"><i class="fas fa-fish"></i>友链</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon inverted  input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--这里来弄一个导航隐藏按钮-->
+    <a href="#" class="ui black icon button m-right-top m-mobile-show menu toggle">
+        <i class="sidebar icon"></i>
+    </a>
+
+</nav>
+
+<!--中部主体-->
+
+<!--<div class="ui stackable this container m-container-eight">-->
+<div class="item">
+    <div id="timeline">
+        <section class="year" th:each="blid,Stat : ${timeLineMap}" th:if="${not #lists.isEmpty(timeLineMap)}">
+            <h3 th:text="${Stat.current.key}">2019.01</h3>
+            <section>
+                <ul>
+                    <div th:each="tlblog : ${Stat.current.value}">
+                        <li>
+                            <a th:href="@{/blog/{blId}(blId=${tlblog.blId})}" href="#" th:text="${tlblog.title}">title</a>
+                            <span th:text="${tlblog.date}">6-01</span>
+                        </li>
+                    </div>
+                </ul>
+            </section>
+        </section>
+    </div>
+</div>
+
+
+<!--</div>-->
+<!--板娘-->
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+</div>
+
+
+<link rel="stylesheet" href="../static/css/timeline.css" th:href="@{/css/timeline.css}">
+<!--板娘-->
+<link rel="stylesheet" type="text/css" href="../static/lib/assets/waifu.css" th:href="@{/lib/assets/waifu.css}"/>
+<script src="../static/lib/assets/waifu-tips.js" th:src="@{/lib/assets/waifu-tips.js}"></script>
+<script src="../static/lib/assets/live2d.js" th:src="@{/lib/assets/live2d.js}"></script>
+<script type="text/javascript">initModel("../peng//lib/assets/")</script>
+<!--粒子特效-->
+<script src="../static/js/particle_effects.js" th:src="@{/js/particle_effects.js}"></script>
+<!--也许用到的jQuery的引用-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<!--这里进行semanticUI的js 的CDN的引用 -->
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+
+    $('#payButton').popup({
+        popup: $('.payQR.popup'),
+        on: 'click',
+        position: 'bottom center'
+    });
+    $('.ui.accordion')
+        .accordion()
+    ;
+</script>
+</body>
+</html>

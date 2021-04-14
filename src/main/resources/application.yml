@@ -1,0 +1,61 @@
+# 服务器配置
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 80
+  connection-timeout: 5000ms
+  servlet:
+    context-path: /
+
+# Spring配置
+spring:
+  # 环境 dev|test|prod
+  profiles:
+    active: dev
+  #thymeleaf页面模板配置
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    mode: HTML5
+
+
+
+
+
+  jackson:
+    time-zone: GMT%2B8
+  serialization:
+    #格式化输出
+    indent_output: true
+    #忽略无法转换的对象
+    fail_on_empty_beans: false
+    #设置空如何序列化
+    defaultPropertyInclusion: NON_EMPTY
+
+#    ## 默认日期格式化
+#    date-format: yyyy-MM-dd HH:mm:ss
+
+
+mybatis-plus:
+#    configuration:
+#      map-underscore-to-camel-case: true
+#      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    refresh-mapper: true
+    #驼峰下划线转换
+    column-underline: true
+
+#pagehelper分页插件配置
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+
+
+
