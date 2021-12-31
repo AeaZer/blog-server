@@ -206,3 +206,67 @@ Unconditional classes:
 
 
 
+2021-12-30 11:34:18.717  INFO 50210 --- [restartedMain] com.AreaZer.MyBlogApplication            : Starting MyBlogApplication on TommorrowdeMacBook-Pro.local with PID 50210 (/Users/tommorrow/IdeaProjects/blogServer/target/classes started by tommorrow in /Users/tommorrow/IdeaProjects/blogServer)
+2021-12-30 11:34:18.721  INFO 50210 --- [restartedMain] com.AreaZer.MyBlogApplication            : The following profiles are active: dev
+2021-12-30 11:34:18.773  INFO 50210 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-30 11:34:18.774  INFO 50210 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-30 11:34:19.749  INFO 50210 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-30 11:34:19.751  INFO 50210 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-30 11:34:19.804  INFO 50210 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+2021-12-30 11:34:20.186  INFO 50210 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.AreaZer.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$c7a27484] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 11:34:20.252  INFO 50210 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'myRealm' of type [com.AreaZer.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 11:34:20.548  INFO 50210 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 11:34:20.619  INFO 50210 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 11:34:20.705  INFO 50210 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$18083bea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 11:34:21.354  INFO 50210 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-30 11:34:21.382  INFO 50210 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-30 11:34:21.383  INFO 50210 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-12-30 11:34:21.465  INFO 50210 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-30 11:34:21.465  INFO 50210 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2691 ms
+2021-12-30 11:34:21.995  INFO 50210 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-12-30 11:34:24.509  INFO 50210 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-12-30 11:34:46.351  INFO 50210 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-30 11:34:46.545  WARN 50210 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-12-30 11:34:46.586  INFO 50210 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-30 11:34:47.455  INFO 50210 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-30 11:34:47.566  INFO 50210 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-30 11:34:47.572  INFO 50210 --- [restartedMain] com.AreaZer.MyBlogApplication            : Started MyBlogApplication in 44.398 seconds (JVM running for 50.082)
+2021-12-30 11:34:54.830  INFO 50210 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-30 11:34:54.832  INFO 50210 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-30 11:34:54.858  INFO 50210 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2021-12-30 11:35:00.332  INFO 50210 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-12-30 11:35:00.335  INFO 50210 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-12-30 11:47:21.755  INFO 50210 --- [Thread-81] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-30 11:47:21.783  INFO 50210 --- [Thread-81] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-12-30 18:06:21.007  INFO 68434 --- [restartedMain] com.AreaZer.MyBlogApplication            : Starting MyBlogApplication on TommorrowdeMacBook-Pro.local with PID 68434 (/Users/tommorrow/IdeaProjects/blogServer/target/classes started by tommorrow in /Users/tommorrow/IdeaProjects/blogServer)
+2021-12-30 18:06:21.012  INFO 68434 --- [restartedMain] com.AreaZer.MyBlogApplication            : The following profiles are active: dev
+2021-12-30 18:06:21.060  INFO 68434 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-30 18:06:21.060  INFO 68434 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-30 18:06:22.002  INFO 68434 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-30 18:06:22.004  INFO 68434 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-30 18:06:22.059  INFO 68434 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 0 repository interfaces.
+2021-12-30 18:06:22.417  INFO 68434 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.AreaZer.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$dc73d9bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 18:06:22.474  INFO 68434 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'myRealm' of type [com.AreaZer.shiro.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 18:06:22.697  INFO 68434 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 18:06:22.751  INFO 68434 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 18:06:22.820  INFO 68434 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2cd9a125] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-30 18:06:23.393  INFO 68434 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-30 18:06:23.419  INFO 68434 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-30 18:06:23.420  INFO 68434 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-12-30 18:06:23.493  INFO 68434 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-30 18:06:23.495  INFO 68434 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2434 ms
+2021-12-30 18:06:23.906  INFO 68434 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-12-30 18:06:27.060  INFO 68434 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-12-30 18:06:48.470  INFO 68434 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-30 18:06:48.651  WARN 68434 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-12-30 18:06:48.685  INFO 68434 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-30 18:06:49.234  INFO 68434 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-30 18:06:49.308  INFO 68434 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-30 18:06:49.312  INFO 68434 --- [restartedMain] com.AreaZer.MyBlogApplication            : Started MyBlogApplication in 43.865 seconds (JVM running for 49.532)
+2021-12-30 18:06:49.896  INFO 68434 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-30 18:06:49.898  INFO 68434 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-30 18:06:49.925  INFO 68434 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2021-12-30 18:06:55.394  INFO 68434 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-12-30 18:06:55.398  INFO 68434 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-12-30 18:16:39.696  INFO 68434 --- [Thread-93] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-30 18:16:39.744  INFO 68434 --- [Thread-93] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
